@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="box1">
+
+    <div class="h-box">
+        <h1> <%=day1%>, <%=month1%>  <%= date1%> List </h1>
+    </div>
+    
+     <div class="content">
+
+        <ul>
+           <% if(locals.list1) { %>
+
+            <h2 style="text-align: center;"> <%=list1.length%> Tasks Are Added</h2>
+
+            <% for(var i=0; i<list1.length; i++) { %>
+                    
+            <li>
+                <p><input type="checkbox" name="" id=""> <%= list1[i] %> </p> 
+            </li>
+                <hr>
+              
+             <% } %>  
+             
+            <% } else { %>
+                
+                <h2 style="text-align: center;">Add Your Daily Task</h2>
+
+                <li><p>Eat</p></li><hr>
+                <li><p>Sleep</p></li><hr>
+                <li><p>Study</p></li><hr>
+                
+            <% } %>
+
+               <form action="submit" method="post">
+                <input type="text" name="name" autocomplete="off">
+                <input type="submit" value="+">
+               </form>
+        </ul>
+    
+    </div>    
+    </div>
+    </div>
+
+</body>
+</html>

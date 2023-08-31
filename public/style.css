@@ -1,0 +1,75 @@
+body{
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(60deg, #013A6B 50%, #004E95 50%);
+  min-height: 100vh;
+  font-family: 'Caveat', cursive;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'PT Serif', serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.h-box{
+    background-color: rgb(165, 103, 224);
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content{
+    background-color: white;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+ul{
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px  ;
+    list-style-type: none;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid #004E95;
+    padding: 10px;
+    width: 70%;
+}
+
+input[type = submit] {
+    background-color: rgb(165, 103, 224);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 2.5px;
+    margin-top: 5px;
+    color: white;
+    cursor: pointer;
+ }
+
+input[type = checkbox]{
+    margin-right: 20px;
+}
